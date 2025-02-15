@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression_Suit">
+<suite name="SanityTest_Suit">
 
 	<groups>
 		<run>
-			<!-- <include name="TC-001"/> -->		
+			<!-- <include name="Sanity_TC_001"/> 
+			-->		
 		</run>
 	</groups>
  
-	<test name="Regression Test">
+	<test name="Sanity Test">
 		<classes>
 			<class name="sanityTestCases.SanityTest">
 				<!---->
@@ -16,8 +17,6 @@
 					<!-- 					 
 					<include name="" />
 					-->	
-					
-
 				</methods>
 			</class>
 		</classes>

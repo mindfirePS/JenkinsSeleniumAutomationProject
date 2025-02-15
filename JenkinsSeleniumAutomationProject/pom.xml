@@ -22,9 +22,10 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<!--in cmd type  mvn test -D xmlSuiteFileName=RegressionTest.xml-->
-						<!--in cmd type  mvn test -DxmlSuiteFileName=SanityTest.xml-->
-						<!--in cmd type  mvn test -DxmlSuiteFileName=SmokeTest.xml-->
+						<!-- in cmd type -->
+						<!-- mvn test -D xmlSuiteFileName=RegressionTest.xml -->
+						<!-- mvn test -D xmlSuiteFileName=SanityTest.xml -->
+						<!-- mvn test -D xmlSuiteFileName=SmokeTest.xml -->
 						<suiteXmlFile>./src/test/resources/${xmlSuiteFileName}</suiteXmlFile>
 					</suiteXmlFiles>
 					<reportsDirectory>${project.basedir}/test-output</reportsDirectory>

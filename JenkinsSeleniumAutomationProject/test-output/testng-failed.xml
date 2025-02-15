@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regressionTestCases.RegressionTest">
+      <class name="sanityTestCases.SanityTest">
         <methods>
-          <include name="verify_login_is_successful_with_correct_credentials"/>
+          <include name="quitBrowser"/>
+          <include name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword"/>
+          <include name="LaunchBrowser"/>
+          <include name="navigateToApp"/>
         </methods>
-      </class> <!-- regressionTestCases.RegressionTest -->
+      </class> <!-- sanityTestCases.SanityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

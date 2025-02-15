@@ -2,19 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-15T23:35:14 IST" name="Regression_Suit" finished-at="2025-02-15T23:35:32 IST" duration-ms="18761">
+  <suite started-at="2025-02-16T02:44:50 IST" name="SmokeTest_Suit" finished-at="2025-02-16T02:45:13 IST" duration-ms="22877">
     <groups>
-      <group name="Regression_TC_001">
-        <method signature="RegressionTest.verify_login_is_successful_with_correct_credentials()[pri:0, instance:regressionTestCases.RegressionTest@51acdf2e]" name="verify_login_is_successful_with_correct_credentials" class="regressionTestCases.RegressionTest"/>
-      </group> <!-- Regression_TC_001 -->
+      <group name="Smoke_TC_001">
+        <method signature="SmokeTest.verify_login_is_successful_with_correct_credentials()[pri:0, instance:smokeTestCases.SmokeTest@7adda9cc]" name="verify_login_is_successful_with_correct_credentials" class="smokeTestCases.SmokeTest"/>
+      </group> <!-- Smoke_TC_001 -->
     </groups>
-    <test started-at="2025-02-15T23:35:14 IST" name="Regression Test" finished-at="2025-02-15T23:35:32 IST" duration-ms="18761">
-      <class name="regressionTestCases.RegressionTest">
-        <test-method signature="verify_login_is_successful_with_correct_credentials()[pri:0, instance:regressionTestCases.RegressionTest@51acdf2e]" started-at="2025-02-15T23:35:14 IST" name="verify_login_is_successful_with_correct_credentials" finished-at="2025-02-15T23:35:32 IST" duration-ms="18704" status="PASS">
+    <test started-at="2025-02-16T02:44:50 IST" name="Smoke Test" finished-at="2025-02-16T02:45:13 IST" duration-ms="22877">
+      <class name="smokeTestCases.SmokeTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:smokeTestCases.SmokeTest@7adda9cc]" started-at="2025-02-16T02:44:50 IST" name="LaunchBrowser" finished-at="2025-02-16T02:44:56 IST" duration-ms="6383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:smokeTestCases.SmokeTest@7adda9cc]" started-at="2025-02-16T02:44:56 IST" name="navigateToApp" finished-at="2025-02-16T02:45:00 IST" duration-ms="3645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToApp -->
+        <test-method signature="verify_login_is_successful_with_correct_credentials()[pri:0, instance:smokeTestCases.SmokeTest@7adda9cc]" started-at="2025-02-16T02:45:00 IST" name="verify_login_is_successful_with_correct_credentials" finished-at="2025-02-16T02:45:11 IST" duration-ms="11172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_successful_with_correct_credentials -->
-      </class> <!-- regressionTestCases.RegressionTest -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Regression_Suit -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:smokeTestCases.SmokeTest@7adda9cc]" started-at="2025-02-16T02:45:11 IST" name="quitBrowser" finished-at="2025-02-16T02:45:13 IST" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- smokeTestCases.SmokeTest -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- SmokeTest_Suit -->
 </testng-results>

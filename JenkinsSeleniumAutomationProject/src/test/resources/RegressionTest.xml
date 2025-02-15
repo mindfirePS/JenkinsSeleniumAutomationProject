@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression_Suit">
+<suite name="RegressionTest_Suit">
 
 	<groups>
 		<run>
-			<!-- -->	<include name="Regression_TC_001"/> 	
+			<!--	<include name="Regression_TC_001"/> 	
+			-->
 		</run>
 	</groups>
  
@@ -16,8 +17,6 @@
 					<!-- 					 
 					<include name="" />
 					-->	
-					
-
 				</methods>
 			</class>
 		</classes>

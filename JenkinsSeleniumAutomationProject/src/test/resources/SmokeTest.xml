@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression_Suit">
+<suite name="SmokeTest_Suit">
 
 	<groups>
 		<run>
-			<!-- <include name="TC-001"/> -->		
+			<!-- 
+			<include name="Smoke_TC_001"/> 	
+			-->	
 		</run>
 	</groups>
  
-	<test name="Regression Test">
+	<test name="Smoke Test">
 		<classes>
 			<class name="smokeTestCases.SmokeTest">
 				<!---->
@@ -16,8 +18,6 @@
 					<!-- 					 
 					<include name="" />
 					-->	
-					
-
 				</methods>
 			</class>
 		</classes>
