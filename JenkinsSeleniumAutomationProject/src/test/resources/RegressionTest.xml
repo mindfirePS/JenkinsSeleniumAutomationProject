@@ -4,7 +4,7 @@
 
 	<groups>
 		<run>
-			<!-- <include name="TC-001"/> -->		
+			<!-- -->	<include name="Regression_TC_001"/> 	
 		</run>
 	</groups>
  

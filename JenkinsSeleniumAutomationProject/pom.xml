@@ -23,6 +23,8 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!--in cmd type  mvn test -DxmlSuiteFileName=RegressionTest.xml-->
+						<!--in cmd type  mvn test -DxmlSuiteFileName=SanityTest.xml-->
+						<!--in cmd type  mvn test -DxmlSuiteFileName=SmokeTest.xml-->
 						<suiteXmlFile>./src/main/resources/${xmlSuiteFileName}</suiteXmlFile>
 					</suiteXmlFiles>
 					<reportsDirectory>${project.basedir}/test-output</reportsDirectory>
