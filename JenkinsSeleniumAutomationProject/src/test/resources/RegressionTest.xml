@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression_Suit">
+
+	<groups>
+		<run>
+			<!-- <include name="TC-001"/> -->		
+		</run>
+	</groups>
+ 
+	<test name="Regression Test">
+		<classes>
+			<class name="regressionTestCases.RegressionTest">
+				<!---->
+				<methods>
+					<!-- 					 
+					<include name="" />
+					-->	
+					
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
