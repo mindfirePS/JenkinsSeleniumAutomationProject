@@ -1,0 +1,1 @@
+curl "http://localhost:8080/buildByToken/build?job=OHRM-SmokeTest&token=OHRMSmokeTest"
