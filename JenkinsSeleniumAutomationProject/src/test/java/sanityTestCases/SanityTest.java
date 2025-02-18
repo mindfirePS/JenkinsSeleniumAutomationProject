@@ -19,9 +19,11 @@ public class SanityTest extends TestBase
 		driver.findElement(By.xpath(loginButton_xpath)).click();
 		System.out.println("Login button is clicked");
 
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(usernameInputBoxRequired_xpath)).isDisplayed();
 		System.out.println("Required warning is shown under username input text box");
 
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(passwordInputBoxRequired_xpath)).isDisplayed();
 		System.out.println("Required warning is shown under password input text box");
 	}
@@ -90,6 +92,7 @@ public class SanityTest extends TestBase
 		driver.findElement(By.xpath(loginButton_xpath)).click();
 		System.out.println("Login button is clicked");
 		
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(passwordInputBoxRequired_xpath)).isDisplayed();
 		System.out.println("Required warning is shown under password input text box");	
 	}
@@ -104,6 +107,7 @@ public class SanityTest extends TestBase
 		driver.findElement(By.xpath(loginButton_xpath)).click();
 		System.out.println("Login button is clicked");
 		
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(usernameInputBoxRequired_xpath)).isDisplayed();
 		System.out.println("Required warning is shown under username input text box");
 	}

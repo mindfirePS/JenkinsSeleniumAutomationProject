@@ -35,15 +35,17 @@ public class TestBase
 	}
 	
 	@AfterTest
-	public void quitBrowser()
+	public void quitBrowser() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		driver.quit();
 		System.out.println("Browser Quited");
 	}
 	
 	@BeforeMethod
-	public void navigateToApp()
+	public void navigateToApp() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		driver.get(url);
 		System.out.println("Navigated to url : "+url);
 	}
