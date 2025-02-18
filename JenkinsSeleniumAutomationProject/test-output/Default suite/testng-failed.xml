@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smokeTestCases.SmokeTest">
+      <class name="regressionTestCases.RegressionTest">
         <methods>
-          <include name="navigateToApp"/>
+          <include name="verify_login_is_successful_with_correct_credentials"/>
           <include name="quitBrowser"/>
           <include name="LaunchBrowser"/>
-          <include name="verify_login_is_successful_with_correct_credentials"/>
+          <include name="navigateToApp"/>
         </methods>
-      </class> <!-- smokeTestCases.SmokeTest -->
+      </class> <!-- regressionTestCases.RegressionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

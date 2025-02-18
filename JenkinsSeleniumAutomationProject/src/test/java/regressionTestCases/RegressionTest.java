@@ -11,28 +11,6 @@ import testBase.TestBase;
 
 public class RegressionTest extends TestBase
 {
-	@BeforeTest
-	public void LaunchBrowser()
-	{
-		driver = new FirefoxDriver();
-		System.out.println("Browser Launched");
-	}
-	
-	@AfterTest
-	public void quitBrowser()
-	{
-		driver.quit();
-		System.out.println("Browser Quited");
-	}
-	
-	@BeforeMethod
-	public void navigateToApp()
-	{
-		driver.get(url);
-		System.out.println("Navigated to url : "+url);
-	}
-
-
 	
 	@Test(groups= {"Regression_TC_001"})
 	public void verify_login_is_successful_with_correct_credentials() throws InterruptedException
@@ -48,13 +26,14 @@ public class RegressionTest extends TestBase
 		System.out.println("Login button is clicked");
 		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath(dashboard_xpath)).isDisplayed();
+		driver.findElement(By.cssSelector(ohrmDashboardLogo_css)).isDisplayed();
 		System.out.println("Dashboard is displayed");
 		
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector(dashboarddd_css)).click();
 		System.out.println("Drop Down option button is clicked");
-		
+
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(logout_xpath)).click();
 		System.out.println("Logout option is clicked");
 		

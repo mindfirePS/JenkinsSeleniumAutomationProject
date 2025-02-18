@@ -11,27 +11,6 @@ import testBase.TestBase;
 
 public class SanityTest extends TestBase
 {
-	@BeforeTest
-	public void LaunchBrowser()
-	{
-		driver = new FirefoxDriver();
-		System.out.println("Browser Launched");
-	}
-	
-	@AfterTest
-	public void quitBrowser()
-	{
-		driver.quit();
-		System.out.println("Browser Quited");
-	}
-	
-	@BeforeMethod
-	public void navigateToApp()
-	{
-		driver.get(url);
-		System.out.println("Navigated to url : "+url);
-	}
-
 	
 	@Test(groups= {"Sanity_TC_001"})
 	public void verify_login_is_unsuccessful_with_no_credentials() throws InterruptedException

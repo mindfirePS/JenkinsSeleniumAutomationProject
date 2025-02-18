@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionTest_Suit]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="regressionTestCases.RegressionTest">
+        <methods>
+          <include name="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword"/>
+          <include name="verify_login_is_successful_with_correct_credentials"/>
+          <include name="verify_login_is_unsuccessful_with_entering_only_password"/>
+          <include name="verify_login_is_unsuccessful_with_entering_only_username"/>
+          <include name="verify_login_is_unsuccessful_with_no_credentials"/>
+          <include name="quitBrowser"/>
+          <include name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword"/>
+          <include name="verify_login_is_unsuccessful_with_incorrect_credentials"/>
+          <include name="LaunchBrowser"/>
+          <include name="navigateToApp"/>
+        </methods>
+      </class> <!-- regressionTestCases.RegressionTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [RegressionTest_Suit] -->
