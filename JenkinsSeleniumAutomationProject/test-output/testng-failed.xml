@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sanityTestCases.SanityTest">
+      <class name="smokeTestCases.SmokeTest">
         <methods>
-          <include name="quitBrowser"/>
-          <include name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword"/>
-          <include name="LaunchBrowser"/>
           <include name="navigateToApp"/>
+          <include name="quitBrowser"/>
+          <include name="LaunchBrowser"/>
+          <include name="verify_login_is_successful_with_correct_credentials"/>
         </methods>
-      </class> <!-- sanityTestCases.SanityTest -->
+      </class> <!-- smokeTestCases.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

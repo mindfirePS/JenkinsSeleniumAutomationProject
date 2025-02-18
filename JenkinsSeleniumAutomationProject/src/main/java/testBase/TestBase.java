@@ -16,9 +16,9 @@ public class TestBase
 	public static String usernameInputBox_css = "input[name='username']";
 	public static String passwordInputBox_css = "input[name='password']";
 	public static String loginButton_xpath = "//button[@type='submit']";
-	public static String dashboard_xpath = "//h6[text()='Dashboard']";
+	public static String dashboard_xpath = "//h6[text()='Cockpit']";
 	public static String dashboarddd_css = "span.oxd-userdropdown-tab>i";
-	public static String logout_xpath = "//a[text()='Logout']";
+	public static String logout_xpath = "//a[text()='Abmelden']";
 	public static String usernameInputBoxRequired_xpath = "//input[@name='username']//ancestor::div[@class='oxd-form-row']//span[text()='Required']";
 	public static String passwordInputBoxRequired_xpath = "//input[@name='password']//ancestor::div[@class='oxd-form-row']//span[text()='Required']";
 	public static String invalidCredentials_css = "div.orangehrm-login-error>div>div>p";
