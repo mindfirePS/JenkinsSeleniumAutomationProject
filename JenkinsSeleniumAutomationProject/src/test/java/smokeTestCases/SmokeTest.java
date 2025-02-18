@@ -32,7 +32,8 @@ public class SmokeTest extends TestBase
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector(dashboarddd_css)).click();
 		System.out.println("Drop Down option button is clicked");
-
+		
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(logout_xpath)).click();
 		System.out.println("Logout option is clicked");
 
