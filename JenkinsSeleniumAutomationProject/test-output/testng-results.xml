@@ -1,85 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T00:39:09 IST" name="SanityTest_Suit" finished-at="2025-02-19T00:39:48 IST" duration-ms="38808">
+  <suite started-at="2025-02-20T20:56:41 IST" name="RegressionTest_Suit" finished-at="2025-02-20T20:58:15 IST" duration-ms="94230">
     <groups>
-      <group name="Sanity_TC_001">
-        <method signature="SanityTest.verify_login_is_unsuccessful_with_no_credentials()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" name="verify_login_is_unsuccessful_with_no_credentials" class="sanityTestCases.SanityTest"/>
-      </group> <!-- Sanity_TC_001 -->
-      <group name="Sanity_TC_002">
-        <method signature="SanityTest.verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword" class="sanityTestCases.SanityTest"/>
-      </group> <!-- Sanity_TC_002 -->
-      <group name="Sanity_TC_005">
-        <method signature="SanityTest.verify_login_is_unsuccessful_with_entering_only_password()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" name="verify_login_is_unsuccessful_with_entering_only_password" class="sanityTestCases.SanityTest"/>
-        <method signature="SanityTest.verify_login_is_unsuccessful_with_entering_only_username()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" name="verify_login_is_unsuccessful_with_entering_only_username" class="sanityTestCases.SanityTest"/>
-      </group> <!-- Sanity_TC_005 -->
-      <group name="Sanity_TC_003">
-        <method signature="SanityTest.verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" name="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword" class="sanityTestCases.SanityTest"/>
-      </group> <!-- Sanity_TC_003 -->
-      <group name="Sanity_TC_004">
-        <method signature="SanityTest.verify_login_is_unsuccessful_with_incorrect_credentials()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" name="verify_login_is_unsuccessful_with_incorrect_credentials" class="sanityTestCases.SanityTest"/>
-      </group> <!-- Sanity_TC_004 -->
+      <group name="Regression_TC_001">
+        <method signature="RegressionTest.verify_login_is_successful_with_correct_credentials()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_successful_with_correct_credentials" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_001 -->
+      <group name="Regression_TC_006">
+        <method signature="RegressionTest.verify_login_is_unsuccessful_with_entering_only_username()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_unsuccessful_with_entering_only_username" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_006 -->
+      <group name="Regression_TC_007">
+        <method signature="RegressionTest.verify_login_is_unsuccessful_with_entering_only_password()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_unsuccessful_with_entering_only_password" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_007 -->
+      <group name="Regression_TC_002">
+        <method signature="RegressionTest.verify_login_is_unsuccessful_with_no_credentials()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_unsuccessful_with_no_credentials" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_002 -->
+      <group name="Regression_TC_003">
+        <method signature="RegressionTest.verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_003 -->
+      <group name="Regression_TC_004">
+        <method signature="RegressionTest.verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_004 -->
+      <group name="Regression_TC_005">
+        <method signature="RegressionTest.verify_login_is_unsuccessful_with_incorrect_credentials()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" name="verify_login_is_unsuccessful_with_incorrect_credentials" class="regressionTestCases.RegressionTest"/>
+      </group> <!-- Regression_TC_005 -->
     </groups>
-    <test started-at="2025-02-19T00:39:09 IST" name="Sanity Test" finished-at="2025-02-19T00:39:48 IST" duration-ms="38808">
-      <class name="sanityTestCases.SanityTest">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:09 IST" name="LaunchBrowser" finished-at="2025-02-19T00:39:16 IST" duration-ms="6416" status="PASS">
+    <test started-at="2025-02-20T20:56:41 IST" name="Regression Test" finished-at="2025-02-20T20:58:15 IST" duration-ms="94230">
+      <class name="regressionTestCases.RegressionTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:56:41 IST" name="LaunchBrowser" finished-at="2025-02-20T20:56:49 IST" duration-ms="8792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:16 IST" name="navigateToApp" finished-at="2025-02-19T00:39:20 IST" duration-ms="3754" status="PASS">
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:56:49 IST" name="navigateToApp" finished-at="2025-02-20T20:56:55 IST" duration-ms="6012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToApp -->
-        <test-method signature="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:20 IST" name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword" finished-at="2025-02-19T00:39:25 IST" duration-ms="5541" status="PASS">
+        <test-method signature="verify_login_is_successful_with_correct_credentials()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:56:55 IST" name="verify_login_is_successful_with_correct_credentials" finished-at="2025-02-20T20:57:09 IST" duration-ms="13322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_is_successful_with_correct_credentials -->
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:09 IST" name="navigateToApp" finished-at="2025-02-20T20:57:12 IST" duration-ms="3131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToApp -->
+        <test-method signature="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:12 IST" name="verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword" finished-at="2025-02-20T20:57:18 IST" duration-ms="6029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_unsuccessful_with_correctUsername_and_incorrectPassword -->
-        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:25 IST" name="navigateToApp" finished-at="2025-02-19T00:39:26 IST" duration-ms="896" status="PASS">
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:18 IST" name="navigateToApp" finished-at="2025-02-20T20:57:21 IST" duration-ms="3043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToApp -->
-        <test-method signature="verify_login_is_unsuccessful_with_entering_only_password()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:26 IST" name="verify_login_is_unsuccessful_with_entering_only_password" finished-at="2025-02-19T00:39:28 IST" duration-ms="2351" status="PASS">
+        <test-method signature="verify_login_is_unsuccessful_with_entering_only_password()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:21 IST" name="verify_login_is_unsuccessful_with_entering_only_password" finished-at="2025-02-20T20:57:25 IST" duration-ms="4570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_unsuccessful_with_entering_only_password -->
-        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:28 IST" name="navigateToApp" finished-at="2025-02-19T00:39:29 IST" duration-ms="947" status="PASS">
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:26 IST" name="navigateToApp" finished-at="2025-02-20T20:57:29 IST" duration-ms="3159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToApp -->
-        <test-method signature="verify_login_is_unsuccessful_with_entering_only_username()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:29 IST" name="verify_login_is_unsuccessful_with_entering_only_username" finished-at="2025-02-19T00:39:32 IST" duration-ms="2374" status="PASS">
+        <test-method signature="verify_login_is_unsuccessful_with_entering_only_username()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:29 IST" name="verify_login_is_unsuccessful_with_entering_only_username" finished-at="2025-02-20T20:57:33 IST" duration-ms="4469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_unsuccessful_with_entering_only_username -->
-        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:32 IST" name="navigateToApp" finished-at="2025-02-19T00:39:33 IST" duration-ms="760" status="PASS">
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:33 IST" name="navigateToApp" finished-at="2025-02-20T20:57:36 IST" duration-ms="3099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToApp -->
-        <test-method signature="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:33 IST" name="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword" finished-at="2025-02-19T00:39:38 IST" duration-ms="4955" status="PASS">
+        <test-method signature="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:36 IST" name="verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword" finished-at="2025-02-20T20:57:42 IST" duration-ms="5383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_unsuccessful_with_incorrectUsername_and_correctPassword -->
-        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:38 IST" name="navigateToApp" finished-at="2025-02-19T00:39:38 IST" duration-ms="797" status="PASS">
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:42 IST" name="navigateToApp" finished-at="2025-02-20T20:57:45 IST" duration-ms="3151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToApp -->
-        <test-method signature="verify_login_is_unsuccessful_with_incorrect_credentials()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:38 IST" name="verify_login_is_unsuccessful_with_incorrect_credentials" finished-at="2025-02-19T00:39:43 IST" duration-ms="4973" status="PASS">
+        <test-method signature="verify_login_is_unsuccessful_with_incorrect_credentials()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:45 IST" name="verify_login_is_unsuccessful_with_incorrect_credentials" finished-at="2025-02-20T20:57:51 IST" duration-ms="5892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_unsuccessful_with_incorrect_credentials -->
-        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:43 IST" name="navigateToApp" finished-at="2025-02-19T00:39:44 IST" duration-ms="996" status="PASS">
+        <test-method is-config="true" signature="navigateToApp()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:51 IST" name="navigateToApp" finished-at="2025-02-20T20:57:55 IST" duration-ms="4426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToApp -->
-        <test-method signature="verify_login_is_unsuccessful_with_no_credentials()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:44 IST" name="verify_login_is_unsuccessful_with_no_credentials" finished-at="2025-02-19T00:39:47 IST" duration-ms="2350" status="PASS">
+        <test-method signature="verify_login_is_unsuccessful_with_no_credentials()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:57:55 IST" name="verify_login_is_unsuccessful_with_no_credentials" finished-at="2025-02-20T20:58:09 IST" duration-ms="13738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_is_unsuccessful_with_no_credentials -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:sanityTestCases.SanityTest@402bba4f]" started-at="2025-02-19T00:39:47 IST" name="quitBrowser" finished-at="2025-02-19T00:39:48 IST" duration-ms="1634" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:regressionTestCases.RegressionTest@795cd85e]" started-at="2025-02-20T20:58:09 IST" name="quitBrowser" finished-at="2025-02-20T20:58:15 IST" duration-ms="5895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- sanityTestCases.SanityTest -->
-    </test> <!-- Sanity Test -->
-  </suite> <!-- SanityTest_Suit -->
+      </class> <!-- regressionTestCases.RegressionTest -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- RegressionTest_Suit -->
 </testng-results>
