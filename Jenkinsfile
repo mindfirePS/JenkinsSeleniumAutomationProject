@@ -20,22 +20,26 @@ pipeline {
 
         stage('OHRM-SmokeTest') {
             steps {
-                bat "mvn -f ${ROOT_POM} clean test -D xmlSuiteFileName=SmokeTest.xml"
                 slackSend channel: 'jenkins_job_notification', message: 'Smoke Test Started'
+                bat "mvn -f ${ROOT_POM} clean test -D xmlSuiteFileName=SmokeTest.xml"
+                slackSend channel: 'jenkins_job_notification', message: 'Smoke Test executed successfully'
+                
             }
         }
 
         stage('OHRM-SanityTest') {
             steps {
-                bat "mvn -f ${ROOT_POM} clean test -D xmlSuiteFileName=SanityTest.xml"
                 slackSend channel: 'jenkins_job_notification', message: 'Sanity Test Started'
+                bat "mvn -f ${ROOT_POM} clean test -D xmlSuiteFileName=SanityTest.xml"
+                slackSend channel: 'jenkins_job_notification', message: 'Sanity Test executed successfully'
             }
         }
 
         stage('OHRM-RegressionTest') {
             steps {
-                bat "mvn -f ${ROOT_POM} clean test -D xmlSuiteFileName=RegressionTest.xml"
                 slackSend channel: 'jenkins_job_notification', message: 'Regression Test Started'
+                bat "mvn -f ${ROOT_POM} clean test -D xmlSuiteFileName=RegressionTest.xml"
+                slackSend channel: 'jenkins_job_notification', message: 'Regression Test executed successfully'
             }
         }
     }
@@ -49,7 +53,7 @@ pipeline {
         }
         failure{
             echo "========pipeline execution failed========"
-             slackSend channel: 'jenkins_job_notification', message: 'Job Failed'
+             slackSend channel: 'jenkins_job_notification', message: 'Failed'
         }
     }
 }
